@@ -129,8 +129,6 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 #moon{
@@ -156,7 +154,8 @@ body{
     top: -70px;
     left: -1%;
     text-align: center;
-    line-height: 125px
+    line-height: 125px;
+    width: 70%;
 }
  #pop {
     font-size: 30px;
@@ -482,8 +481,7 @@ font-weight: 800;
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     
   }
@@ -1023,14 +1021,14 @@ font-weight: 800;
 
 
   /**************************cars swiper css***************************/
-  .swiper {
+  .teen-tantrom-box .swiper {
     width: 600px;
     height: 700px;
     border-radius: 15px;
     transform: rotate(6deg);
 
  }
-  .swiper-slide {
+ .teen-tantrom-box .swiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #1c0c04;
@@ -1038,17 +1036,17 @@ font-weight: 800;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
-  .swiper-slide img {
+  .teen-tantrom-box .swiper .swiper-slide img {
     width: 100%;
     opacity: 0.9;
  }
-  .swiper-slide .card-image {
+  .teen-tantrom-box .swiper .swiper-slide .card-image {
     position: relative;
     transition: opacity 0.3s ease-out;
     width: 100%;
     height: 100%;
  }
-  .swiper-slide .card-description {
+  .teen-tantrom-box .swiper .swiper-slide .card-description {
     position: absolute;
     z-index: 100;
     top: 0;
@@ -1061,7 +1059,7 @@ font-weight: 800;
     padding: 20px;
     color: #fff;
  }
-  .swiper-slide .card-description:before {
+  .teen-tantrom-box .swiper .swiper-slide .card-description:before {
     content: "";
     position: absolute;
     z-index: 9;
@@ -1072,17 +1070,17 @@ font-weight: 800;
     background: #fff;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
  }
-  .swiper-slide .card-description h1, .swiper-slide .card-description p {
+ .teen-tantrom-box .swiper .swiper-slide .card-description h1, .teen-tantrom-box .swiper .swiper-slide .card-description p {
     position: relative;
     z-index: 10;
     text-align: left;
  }
-  .swiper-slide .card-description h1 {
+  .teen-tantrom-box .swiper .swiper-slide .card-description h1 {
     font-size: 28px;
     margin-top: 0;
     margin-bottom: 5px;
  }
-  .swiper-slide .card-description p {
+  .teen-tantrom-box .swiper .swiper-slide .card-description p {
     margin-top: 0;
     letter-spacing: 1px;
  }
@@ -1119,4 +1117,26 @@ font-weight: 800;
     margin: 0 auto;
     display: block;
 }
-  
+
+.reel-swiper .swiper-slide{
+  width: 350px;
+}
+.reel-carousel{
+  overflow-x: clip;
+}
+.reel-carousel .swiper{
+  padding: 5rem 0;
+  overflow: visible;
+}
+/* .reel-swiper .swiper-slide .single{
+  position: relative;
+  pointer-events: none;
+  user-select: none;
+} */
+.reel-swiper .swiper-slide .single img{
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  border-radius: 8px;
+  pointer-events: none;
+ }
